@@ -33,7 +33,7 @@ public:
   CDnsSeedOpts() : nThreads(96), nDnsThreads(4), nPort(53), mbox(NULL), ns(NULL), host(NULL), tor(NULL), fUseTestNet(false), fWipeBan(false), fWipeIgnore(false), ipv4_proxy(NULL), ipv6_proxy(NULL) {}
 
   void ParseCommandLine(int argc, char **argv) {
-    static const char *help = "Darkcoin-seeder\n"
+    static const char *help = "Cryptonodes-seeder\n"
                               "Usage: %s -h <host> -n <ns> [-m <mbox>] [-t <threads>] [-p <port>]\n"
                               "\n"
                               "Options:\n"
@@ -357,16 +357,9 @@ extern "C" void* ThreadStats(void*) {
 }
 
 static const string mainnet_seeds[] = {
-  "bwk1.masterhash.us:52543", 
-  "bwk2.masterhash.us:52543", 
-  "bwk3.masterhash.us:52543", 
-  "bwk4.masterhash.us:52543", 
-  "bwk5.masterhash.us:52543", 
-  "bwk6.masterhash.us:52543", 
-  "bwk7.masterhash.us:52543", 
-  "bwk8.masterhash.us:52543", 
-  "bwk9.masterhash.us:52543", 
-  "bwk10.masterhash.us:52543", 
+  "seed1.cryptonodes.ch:44221", 
+  "seed2.cryptonodes.ch:44221", 
+  "seed3.cryptonodes.ch:44221",  
   ""
 };
 static const string testnet_seeds[] = {"cryptonodes-test-node08.ssus.tech", "cryptonodes-test-node09.ssus.tech", ""};
